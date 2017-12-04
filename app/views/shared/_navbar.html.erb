@@ -4,15 +4,21 @@
     <%= image_tag "logo.png", height: 50 %>
   <% end %>
 
+<style>
+  .red-button {
+    background-color: red;
+  }
+</style>
+
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link red-button" %>
+      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link red-button" %>
+      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link red-button" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
